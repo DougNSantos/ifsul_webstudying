@@ -4,9 +4,10 @@
         <title>Warrior D&D 5.0</title> 
         <meta.charset="utf-8"></meta.charset>       
     </head>
-    <body>
+    <body> <!--AQUI a tag <a> possui um atributo que definimos como NOME, posso pensar nos atributos como sendo variáveis na pagina!!!-->
+        <a name="topo"></a> <!--PODEMOS CRIAR ANCORAS LOCAIS, PARA POR EXEMPLO VOLTAR A UMA PARTE ESPECÍFICA DA PRÓPRIA PAGINA!!!-->
         <h1>Guerreiro no D&D 5.0</h1>
-        <img src="imagem02.jpg"> <!--IMG é uma tag solteira(sem fechamento)-->
+        <img src="imagem03.jpg"> <!--IMG é uma tag solteira(sem fechamento)-->
         <!--src= source, fonte, nós devemos informar onde ele deve buscar, qual é a fonte deta imagem-->
         <!--img é uma tag para mostrar UMA imagem no documento-->
         <!--como a imagem estava na pasta do nosso HTML, só precisamos informar o nome da imagem-->
@@ -62,5 +63,24 @@
                 </tr>
 
             </table>
+            <a href="index.html">VOLTAR A PÁGINA INDEX</a><br> <!--A TAG <A> SERVE PARA LIGAR PAGINAS ENTRE SI, ...-->
+                <!--HYPERLINK= QUER DIZER UM TEXTO QUE LIGA A OUTRO TEXTO, AS PAGINAS WEB SÃO HIPERTEXTOS-->
+                <!--ENTÃO PODEMOS LIGAR AS PAGINAS DE HTML PARA OUTRAS!!!-->
+                <!-- A TAG <A> QUER DIZER ANCOR, OU SEJA, ANCORAR A OUTRA PAGINA OU TEXTO!-->
+                    <!-- após a tag <a> colocamos o atributo href= a pagina ou a url que queremos-->
+                        <!--URL= UNIFORM RESOURCE LOCATOR, localizador uniforme de recursos, na prática é o endereço de uma página web-->
+                        <!--antes do fechamento da tag <a> podemos colocar um mini título que aparecerá na pagina como hyperlink-->
+            <a href="http://google.com.br">LINK PARA GOOGLE</a> <br>  <!--PARA URL, DEVEMOS INFORMAR O PROTOCOLO HTTP E O ENDEREÇO!--> 
+            <a href="#topo">VOLTAR PARA TOPO DA PÁGINA</a> <br> <!--AQUI USAMOS A REFRENCIA DO ATRIBUTO CRIADO NO TOPO DA PAGINA PARA VOLTAR LÁ!-->
+            <!--HREF= HYPERLINK REFERENCE-->  
+            <a href="https://dnd.wizards.com/pt-BR"LINK PARA SITE DA WIZARDS OF THE COAST> 
+            <img src="warrior_logo.jpg"> <!--PODEMOS LIGAR SITES E PAGINAS E ADICIONAR IMAGENS PARA SEREM BOTOES POR EXEMPLO!!!-->
+            <!--PARA ISSO, DEVEMOS ADICIONAR A TAG <IMG> ANTES DO FECHAMENTO DA TAG </A>-->
+            </a> <br> 
+            <br><br> <!--esse brbr da uma quebra de linha e deixa um espaço em branco na pagina!!!-->
+            <a href="imagem02.jpg">
+                <img src="imagem03.jpg"> <!--podemos mostrar uma imagem que nos leva a versão da imagem em tela cheia ou completa!!!-->
+            </a>   
+
     </body>
 </html>
