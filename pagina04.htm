@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Treino Formulários!!!</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <form> <!--AQUI, ESSES DADOS NÃO SERÃO ENVIADOS, ENTÃO NÃO PREISAMOS NOS PREOCUPAR COM O CAMPO ACTION DA TAG FORM!!!-->
+            Usuário: <input type="text" name="user"><br> <!--precisamos de uma variável para guardar o dado do input!!!-->
+            <br>
+            Senha: <input type="password" name="senha"><br> <!--aqui o type é password, então não mostra-rá os caracteres digitados!!!-->
+            <br>
+            <input type="submit" value="ENVIAR"> <!--esse submit, cria o botão para enviar os dados!-->
+            <h3>Escolha sua Raça:</h3> <!--o atributo value vai mostrar um texto dentro do botão criado pelo input!-->
+            <input type="radio" name="raça" value="Humano">Humano
+            <input type="radio" name="raça" value="Anão">Anão <!--radio cria uma seleção única, não deixando mais de uma seleção encadeada-->
+            <input type="radio" name="raça" value="Elfo">Elfo
+            <br><br>
+            <h3>Escolha sua Classe:</h3><br> <!--se apenas deixarmos a tag input se mnada, o navegador criará um botão limpo sem nada dentro-->
+            <input type="radio" name="classe" value="Guerreiro">Guerreiro
+            <input type="radio" name="classe" value="Clérigo">Clérigo
+            <input type="radio" name="classe" value="Paladino">Paladino
+            <br><br>
+
+            <h2>Histórico:</h2><br>
+            <input type="checkbox" name="escolha" value="Sobrevivente">Sobrevivente<br>
+            <input type="checkbox" name="escolha" value="Herói do povo">Herói do povo<br>
+            <input type="checkbox" name="escolha" value="Aprendiz">Aprendiz<br>
+
+            
+            <h3>Selecione as magias:</h3><br>
+            <select name="Magias"> <!--a tag select cria um menu do tipo dropdown, que se abre para as opções-->
+                <option>Bola de fogo</option>
+                <option>Arcana</option>
+                <option>Misseis mágicos</option>
+                <option>Faca de gelo</option>
+                <option>Falar com animais</option>
+            </select><br>
+
+            OBSERVAÇÕES DO PERSONÁGEM:<br>
+            <textarea name="observações" cols="50" rows="15"></textarea><br> <!--a tag taxtarea nos cria uma área para texto!-->
+            <!--rows= é o numeor de linhas permitido digitar e cols= é o numeor de colunas!!!-->
+
+            <input type="submit" value="Pronto!">
+
+
+
+
+        </form>
+
+    </body>
+</html>

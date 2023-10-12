@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulário Básico</title>
+        <meta charset="utf-8">
+    </head>
+    <body><!--a tag form também informa para qual servidor vamos enviar os dados do formulario!-->
+        <form> <!--a tag form, delimita um formulário, e as tags input são filhas de form-->
+            Buscar no Google:<input type="text" name="q"> <br> <!--esse name=q, é a variável que será gravado os dados para oservidor, será enviado!-->
+            <input type="submit" value="buscar"> <!--cria o botão, região para buscar, o value="buscar vai ser o que mostra no botão-->
+        </form> <br> <!--neste caso, o nome da variavel nome é q pois é esse nome que o google usa para as querys, ou buscas-->
+        <form action="https://www.google.com/search"> <!--AGORA INFORMAMOS PARA ONDE QUEREMOS QUE OS DADOS SEJAM ENVIADOS-->
+            Buscar com botões funcionando:<input type="text" name="q"> <br>
+            <input type="submit" value="buscar no google!!!">
+        </form>
+
+
+
+
+<!--a URL de buscas do google é a google.com/search!!!-->
+    </body> <!--a tag input é uma tag solteira e atraves do atributo TYPE da tag input, da pra configura-la com tipos diferentes de dados de entrada-->
+</html>
+<!--ENTÃO O NOME DA VARIVÁVEL PARA BUSCAS DEPENDE DA PROGRAMAÇÃO SO SERVIDOR QUE QUEREOS BUSCAR!!!-->
