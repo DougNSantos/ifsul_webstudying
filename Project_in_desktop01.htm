@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Projeto no desktop 01</title>
+        <meta charset="utf-8">
+        <style>
+            .cabecalho{
+                border: 2px solid;
+                border-color: black;
+
+            }
+        </style>
+        <script>
+            alert("OLÁ!"); //MATRIZ= MATRIZ[LINHA][COLUNA]!!!
+
+            var matint = [[3,6,9],[2,4,6],[1,2,3]]; //Assim se declara uma matriz em javascript!!!
+
+            for(let lin=0;lin<3;lin++){ //essa é a maneira de mostrar a matriz na tela
+                for(let col=0;col<3;col++)
+                document.write(matint[lin][col] +" ");
+                document.write("<br>");
+
+            }
+            document.write("<br>");
+           
+
+            var notas=[[5,7], //se der, podemos escrever assim agora
+                      [7,8]];
+
+                      var colunas=notas[0].length; //o 0.length é porque queremos apenas o numero de colunas da matriz!!!
+
+                      maria=0; //variavel para guardar a soma das notas de Maria, da pra passar valores para fora do laço de repetição!
+            for(let i=0;i<colunas;i++){ //quando o lin=2 ele vai parar, não vai entrar no laço de repetição
+               maria=maria+notas[1][i]; //aqui foi adicionado/somado os valores com a declaração da variavel com a prórpia variavel!!!
+            } //o 1 é por que a maria está posicionada na coluna de índice 1!!!
+
+            var media=maria/colunas;
+            document.write(media);  
+            
+            var xadrez=[[0,0,0,0,0],
+                       [1,1,1,1,1],
+                       [2,2,2,2,2],
+                       [3,3,3,3,3]];
+
+            for(let i=0;i<4;i++){
+                for(let y=0;y<5;y++)
+                document.write(xadrez[i][y] +" ");
+                document.write("<br>");
+            }
+
+        </script>
+    </head>
+    <body>
+    <div class="pai">
+        <div class="cabecalho"></div>   
+        OI     
+        <div class="corpo"></div>
+        <div class="rodape"></div>
+    </div>
+    </body>
+</html>

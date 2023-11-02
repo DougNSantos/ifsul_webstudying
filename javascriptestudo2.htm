@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <title>JavaScript Estudo</title>
+        <meta charset="utf-8">
+        <script>
+            var x; //assim se declara uma variavel
+            x=50;
+            document.write(x); //assim usa-se uma classe do javascript para ecrever na tela
+            document.write("<br>"); //essa tag br do html é usada para criar uma linha em branco, dar uma quebra de linha
+
+            x="Wyz Yellbela"; //assim percebemos que javascript é uma lingugem de tipo frcao, pois a variavel x muda de acordo com a atribuição dada a ela
+            document.write(x);
+            document.write("<br>");
+
+            x=null;
+            document.write(x);
+            document.write("<br>");
+
+            var expressao;
+            expressao=5+10*25;
+            document.write("5+10*25=");
+            document.write(expressao);
+
+            var idade;
+            idade=prompt("Digite a sua idade"); //o prompt vai abrir uma janela pop-up para entrada de dados
+
+            document.write("<br>");
+
+            if(idade>=18){ //estrutura de seleção ou de condição simples
+                var maiorIdade=true; //as variaveis podem ir sendo criadas conforme for necessitando no código, não precisam ser inicializadas
+            }
+            else{
+                var maiorIdade=false;
+            }
+
+            if(maiorIdade){
+                document.write("Maior de idade, pode dirigir");
+            }
+            else{
+                document.write("menor de idade. :(");
+            }
+
+            cargo=prompt("digite o seu cargo");
+            salario=2000;
+
+            switch(cargo){ //usando estrutura de seleção switch
+                case "gerente": //nesta estrutura, vai ser executado o bloco de comando que se enquadrar na requisição do case, ou seja, caso a entrada de dados seja esta, faça isto!!!
+                    salario *= 1.5; //increenta vezes no valor da variavel salario
+                    break;
+
+                case "supervisor":
+                    salario *= 1.2;
+                    break;
+
+                default:
+                    salario *= 1.1;
+            }
+            console.log("salario do "+cargo+ ": " +salario); //o console.log vai mostrar os dados em um console de desenvolvimento do novagedor, para fins de testes e verificação
+            // podemos verificar o console no navegador
+            document.write("<br>");
+            document.write("salario do "+cargo+ ": " +salario);
+
+            //estruturas de repetição:
+
+            n=0;
+            x=1;    
+            while(n<5){
+                x++;
+                n++;
+                document.write(x);
+                document.write("<br>");
+            }
+
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

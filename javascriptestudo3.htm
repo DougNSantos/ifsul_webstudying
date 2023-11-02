@@ -1,0 +1,98 @@
+<html>
+    <head>
+        <title>ESTUDO</title>
+        <meta charset="utf-8">
+        <script>
+//estruturas de repetição:
+//CUIDADO COM AS REPETIÇÕES INFINITAS!!!
+//while
+        n=0;
+        x=1;    
+        while(n<5){
+        x++;
+        n++;
+        document.write(x);
+        document.write("<br>");
+        console.log(n);
+        }
+
+//estrutura do-while
+        z=0;
+        do{
+            z=z+5; //CUIDADO PARA DECLARAR E ATRIBUIR OS VALORES AS VARIAVEIS DIREITO!!!
+            document.write(z);
+            document.write("<br>");
+        } while(z<=20);
+
+//estrutura "for" com contador
+        for(i=0;i<10;i++){
+            document.write("Olá!!!" + i);
+            document.write("<br>");
+        } 
+        
+//vetores/arrays
+        var sul=new Array("RS","SC","PR"); //em javascript, podemos atribuir varios tipos diferentes de variaveis em um vetor!!! cuidar os índices
+        var sudeste=new Array("SP","RJ","MG","ES");
+
+        document.write("ESTADOS DA REGIÃO:"); //a declaração de array, começa com o Array com uma letra Maiúscula
+        document.write("<br>");
+        document.write(sul[0]); //formas de mostrar os vetores!
+        document.write("<br>");
+        document.write(sudeste[3]);
+        document.write("<br>");
+        document.write(sul[1]);
+        document.write("<br>");
+        document.write(sudeste[2]);
+        document.write("<br>");
+
+        var estados=new Array(50,70,95);
+        var tam=estados.length; //método .length- define o tamanho do vetor!!!
+        
+        for(b=0;b<tam;b++){
+            
+            document.write(estados[b]);
+            document.write("<br>"); //quebra de linha após o write, funciona melhor!!!
+        }
+        
+        var dados=new Array(200060,"doug",1.57); //um vetor pode ter tipos de dados diferentes dentro dele, no mesmo vetor!
+        document.write(dados[0] +"<br>");
+        document.write("<br>");
+        document.write(dados[2] +"<br>");
+        document.write("<br>");
+        document.write(dados[1] +"<br>");
+        document.write("<br>");
+
+        var dolar=new Array(1.50,1.45,2.75,8.50); //podemos ter relações entre vetores usando seus indices
+        var mes=new Array("jan","fev","mar","abr");
+
+        dolar.push(2.50); //o método .push- vai adicionar elementos ao fim da fila do vetor selecionado, aqui não tinhamos 2.50 no vetor dolar, entao foi adicionado ao fim do vetor!!!
+        mes.push("mai");
+
+        document.write("<u>DOLAR E MESES</u> <br>"); //a tag <u></u> é usada para deixar o texto em underline!!!
+        for(i=0;i<dolar.length;i++){
+            document.write(mes[i] + " = " + dolar[i] + " <u>relação</u> <br>");
+        }
+
+        dolar.pop(); //o método .pop- elimina o último elemento do vetor
+        mes.pop();
+
+        for(i=0;i<dolar.length;i++){
+            document.write(mes[i] + " = " + dolar[i] + " <u>relação</u> <br>");
+        }
+
+        dolar.unshift(5.0); //o método unshift, adicona um elemento ao começo do array
+        mes.unshift("meses");
+
+        for(i=0;i<dolar.length;i++){
+            document.write(mes[i] + " = " + dolar[i] + " <u>relação</u> <br>");
+        }
+
+        alert(mes); //esse método é o pop-up no navegador!!!
+
+
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

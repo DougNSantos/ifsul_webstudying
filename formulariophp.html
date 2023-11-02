@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Formulário com PHP</title>
+    </head>
+    <body> 
+        <!--o atributo action indica qual arquivo irá receber os dados do usuário!!!-->
+        <!--a tag form srve para ciação de formulários-->
+        <!--o atributo method indica como esses dados serão enviados, os masi comuns são GET e POST-->
+        <!--a tag INput cria um botão, assim como uma tag button, ambos vão criar botões-->
+
+        <form name="cadastro" action="cadastro02.php" method="post"> 
+            Nome:     <input type="text" name="nome" value="nome"><br><br>
+            Endereço: <input type="text" name="endereco" value="endereço"><br><br>
+            cidade:   <input type="text" name="cidade" value="cidade"><br><br>
+
+            <input type="submit" name="botao" value="enviar">
+            <input type="reset" name="reset" value="limpar">
+        </form>
+
+    </body>
+</html>
+
+<!--ESTRUTURAS: WHILE(){}; EXECUTA A VERIFICAÇÃO ANTES
+DO{} WHILE(); EXECUTA A VERIFICAÇÃO DEPOIS DO BLOCO DE CÓDIGOS
+FOR(INICIALIZAÇÃO;CONDIÇÃO;OPERADOR){}; QUANDO REPETIDOS UM NÚMERO DETERMINADO DE VEZES /UTIL PARA IMPRESSÃO DE ARRAYS, CONSULTAS EM BANCO DE DADOS ...
+FOREACH(); MANEIRA MASI FÁCIL DE PERCORRER ARRAYS: FOREACH(NOME ARRAY AS ELEMENTO){};-->
