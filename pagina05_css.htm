@@ -1,0 +1,87 @@
+<html>
+    <head>
+        <title>Pagina Exemplo e teste</title> <!--usando exemplo de sites com cabeçalho, 3 colunas e rodapé-->
+        <meta charset="utf-8">
+        <style>
+            .sem_float{
+                color: blue;
+                width: 330px;
+                box-sizing: border-box;
+                border: 2px solid;
+                border-color: bisque;
+            }
+            .com_float{ /* normalmene não se misturam float right com float left no mesmo layout, pois é fácil se perder*/
+                color: red;
+                border: 1px dashed;
+                width: 330px; /* estão aqui definimos a largura máxima do conjunto de elementos, não deverá exceder este valor definido na largura*/
+                float: left; /*usando a propriedade FLOAT, deixamos as caixas sólidas em flutuantes, assim com o left definido aqui, elas vão se ligar lado a lado para a esquerda!!!*/
+            }
+            .com_clear{ /* a propriedade clear left.... vai quebrar a formatação deixando o início para a esquerde nete caso, semelhente ao <br>*/
+                clear: left; /* no caso, o CLEAR vai desabilitar a flutuação ou seja o FLOAT left, se for clear left, o float right, se for clear right ou ambos se for clear both!!!*/
+            }
+            div{
+                box-sizing: border-box;/*usando herança, podemos definir estilos gerais para todos os elementos, assim as vezes não precisamos definir para cada elemento individualmente e diminui o código*/
+            } /*O BOX SIZING É UM TIPO DE MODELO DE BOX, QUE VAMOS ESTAR DEFININDO!!!*/
+            .site{ /*DEVEMOS OBSERVAR AS MEDIDAS PARA FICAR NAS PROPORÇÕES CORRETAS!!!*/
+                color: black;
+                
+                border: 2px dotted;
+                border-color: aliceblue;
+                float: left;
+                width: 33.33%;
+                max-width: 33.33%; /*max-width assim como min-width e weight delimitam o máximo e o mínimo que o elemnto poderá assumir*/
+                min-width: none;
+                height: 90%;
+                /*aqui, cuidamos os tamanhos, pois usando o box-sizing delimitamos o tamanho total para o tamanho da caixa*/
+            }
+            .pai{
+                clear: left;
+                width: 990px; /* aqui a soma total das 3 caixas e colunas será 990px, pois 330+330+330=990px*/
+                
+                height: 500px;
+                background-color: aquamarine;
+                margin:0 auto; /*a propriedade margin vai definir as margens e com 0 auto, ele ajusta adequadamente ao centro do navegador*/
+            } /*podemos usar porcentagens para largura por exemplo, daí aqui fizemos a classe pai ter o total de 90% de largura total da pagina e a classe filha fica com 33% para cada elemnto dentor da classe pai, dentor dos 90%*/
+            .rodape{                
+                border: 5px solid;
+                border-color: aliceblue;
+                /*DEVEMOS DEIXAR ELEMENTOS SÓLIDOS EM FLUTUANTES PARA APLICAR ALGUMAS CONFIGURAÇÕES, POR ISSO AS VEZES NÃO FUNCIONA SE SÓLIDOS!!!*/
+            }
+            .cabecalho{
+                
+                background-image: url("image01.webp"); /*AQUI VAMOS ADICIONAR UMA IMAGEM AO CABEÇALHO*/
+                background-size: cover; /*AQUI VAMOS DEFINIR COMO A IMAGEM VAI APARECER, A FOMRATAÇÃO DELA NO ELEMENTO*/
+                border: 5px solid;
+                border-color: aliceblue;
+                
+            }
+            .cabecalho, .rodape{ /*usando mais elementos para mais regras gerais*/
+                width: 100%;
+                padding: 5px;
+                clear: left;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="sem_float">1</div> <!--usando assim, as tags div estão fixas, ficam por padrão uma em baixo da outra, mas queremos deixa-las uma do lado da outra-->
+        <div class="sem_float">2</div> <!--isto acontece por que as divs são elementos de bloco, para po-los lado a lado devemos deixá-los flutuantes-->
+        <div class="sem_float">3</div> <br>
+
+        <div class="com_float">1</div>
+        <div class="com_float">2</div>
+        <div class="com_clear"></div>
+        <div class="com_float">3</div>
+        <br><br>
+        
+        <div class="pai"> <!--aqui vamos usar as propriedades de parrent, ou pai, onde as propriedades do pai passam para o filho!!!-->
+            <div class="cabecalho">cabeçalho</div>
+            <div class="site">1 (antes 330px, agora 33%)</div>
+            <div class="site">2 (antes 330px, agora 33%)</div>
+            <div class="site">3 (antes 330px, agora 33%)</div>
+            <div class="rodape">rodapé</div>
+        </div><!--se a soma das medidas dos containers exceder, alguns elementos não ficarão formatados e poderão ficar fora-->
+        <br><br>
+        
+        
+    </body>
+</html>

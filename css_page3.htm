@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>CSS E MAIS TAGS!</title> <!--normalmente se usam o CSS em uma pagina externa e linkam ela a pagina html, mas há outras formas de usar o CSS, como a que fazemos aqui-->
+        <meta charset="utf-8">
+        <style>
+            .borda_azul { /*o width e height não lav em conta as medidas de border e padding, então se border tem mais px e padding também, o tamanho deles vai somar ao width e height*/
+                border: blueviolet 2px solid;
+                padding: 50px;
+                width: 250px; /*usando as propriedades width e height, vamos definir a altura e a largura do "container" da tag div*/
+                height: 150px; /*width= largura, height= altura*/
+                box-sizing: border-box; /* a propriedade border-box, faz com que sejam descontados as propriedades de border e padding no tamanho de height e weight*/
+            }
+        </style>
+    </head>
+    <body>
+        <div> <!--a tag div, cria uma separação, ou uma caixa. sem o CSS normalmente a div não é vista, mas se estilizarmos ela para aparecer sua borda, podemos ve-la-->
+            Texto texta textou...................
+        </div> <!--a tag div é uma tag genérica, não tem uma utilização específica, serve para delimitar uma caixa-->
+        <div class="borda_azul">
+            Agora texto mais texto e textou de novo
+        </div>
+        <div>ESTA É UMA DIV TAMBÉM</div>
+    </body>
+</html>

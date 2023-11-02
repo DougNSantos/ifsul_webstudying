@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head> <!--UMA REGRA CSS DIZ AO NAVEGADOR COMO APRESENTAR CADA ELEMENTO DA PÁGINA!!!-->
+        <title>CSS Study 1</title>
+        <meta charset="utf-8">
+        <style> /*uma folha de CSS é definida com <style> */
+            /*comentarios em CSS são feitos com /* e fechados com -> */
+            /*vamos mudar a cor do elemento h1*/
+            h1{       /*a regra css vai desde h1 até fecha chaves, entre as chaves ficam as propriedades que serão modificadas*/
+                color: blue; /*color é a propriedade, red é o valor que será aplicado a propriedade*/
+                background-color: lightgreen; /*aqui background-color modifica a cor de fundo do texto!*/
+                margin: 100px; /* margin vai delimitar as margens dos elementos, aqui por exemplo, 100px nas 4 direções do título*/
+                border: grey dashed; /* border vai fazer uma borda e podemos definir o tipo de borda, por exemplo aqui temos um tipo dashed!*/
+            }
+            h2{ /*NO CSS A REGRA É NORMALMENTE ASSIM, PROPRIEDADE=VALOR*/
+                color: #FF0000; /*podemos usar a referência da cor em valores hexadecimal também que vai funcionar!!!*/
+                background-color: whitesmoke;
+                margin: 100px 150px 145px 100px; /*podemos definir as margens indicando na mesma propriedade na ordem horária!*/
+                border: 10px crimson ridge; /* também podemos definir a espeçura da borda, aqui tem 10px*/
+                /* as bordas também podem ser configuradas individualmente como border-bottom, border-left e assim por diante*/
+                padding: 7px; /*padding= é a margem interna dos elementos, assim podemos ter margem total ou também padding-left, padding-top e por diante*/
+                font-family: Verdana, Geneva, Tahoma, sans-serif; /*Podemos mudar a fonte, e se colocarmos mais tipos de fontes atrás da principal, se a pagina não for carregada, a p´roxima da fila será usada!!!*/
+                font-size: 15px;
+                font-weight: bold; /*esse é o peso da fonte OBS: A FONTE SANS-SERIF, É A FONTE COM SERIFAS E/OU SEM SERIFAS NAS LETRAS!*/ 
+                font-style: italic;
+            
+            }
+            p{
+                margin-top: 50px; /* aqui podemos delimitar cada canto da margem especificadamente!*/
+                margin-bottom: 40px;
+                margin-left: 150px;
+                margin-right: 100px;
+                color: violet;
+                background-color: aqua;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Agora Magos!</h1><br>
+        <p>Vestida com uma túnica prata que denota seu posto, uma elfa fecha seus olhos para distanciar-se das distrações<br>
+            do campo de batalha e entoa o seu canto sereno. Dedos se agitam à sua frente, ela completa sua magia e lança<br>
+            uma pequena centelha de fogo em direção dos inimigos, explodindo em chamas o incêndio que engolfa os<br>
+            soldados.<br>
+        </p>
+        <h2>Mais MAGOOOOOOOS</h2><br>
+
+    </body>
+</html>

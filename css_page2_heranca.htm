@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>CSS HERANÇA</title>
+        <meta charset="utf-8">
+        <style> /*nos documentos CSS e HTML temos heranças, então se não for especificado o estilo de determinado elemeto, ele poderá herdar o estilo de seu elemento pai!!!*/
+            h1{
+                color:olive;
+                border:blue dashed;
+                background-color: bisque;
+            }
+            body{
+                background-color: aquamarine; /*aqui temso o exemplo de herança que o elemento <p> vai herdar o estilo de <body> que é seu pai!!!*/
+            }/* nem todas as propriedades de css são herdáveis*/
+            p{  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                text-align: center;
+            } 
+            .fonte_diferente{ /*AQUI USAMOS REGRAS PARA CLASSES EM CSS, PARA ESTILIZAR DEVEMOS COMEÇAR COM . E O NOME DA CLASSE! LEMBRANDO QUE USAMOS APENAS O . E NOME DA CLASSE*/
+                background-color: blueviolet; 
+                text-align: center; /*PODEMOS ALINHAR O TEXTO POR EXEMPLO, ASSIM USAMOS ESTE ESTILO TEXT-ALIGN: CENTER; */
+                font-family: 'Courier New', Courier, monospace; /*usando a propriedade de fonte-family, se não mudarmos especificamente na classe criada fonte_diferente, ela vai ser herdada de seu elemento pai!!!*/
+                font-size: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>MAGOS!</h1>
+        <p>Vestida com uma túnica prata que denota seu posto, uma elfa fecha seus olhos para distanciar-se das distrações<br>
+            do campo de batalha e entoa o seu canto sereno. Dedos se agitam à sua frente, ela completa sua magia e lança<br>
+            uma pequena centelha de fogo em direção dos inimigos, explodindo em chamas o incêndio que engolfa os<br>
+            soldados.<br>
+        </p>
+        <div> <!--A tag div, cria um "container" dentro do código e da página, é um tipo de divisão que podemos organizar elementos por exemplo-->
+            <p class="fonte_diferente"> <!--AQUI TEMOS O EXEMPLO DE USO DE UMA CLASSE PARA ESTA TAG <P>-->
+                Este é um novo parágrafo</p>
+        </div>
+        
+    </body>
+</html>
+<!--USAMOS ATÉ AQUI OS SELETORES POR TAGS NO DOCUMENTO CSS! MAS A LIMITAÇÃO DELE É QUE O ESTILO É APLICADO A TODAS AS TAGS DE MESMO TIPO-->
+<!--PODEMOS USAR CLASSES COM NOMES PRÓPRIOS EM CADA TAG QUE QUEREMOS ESTILIZAR INDIVIDUALMENTE!!!-->
